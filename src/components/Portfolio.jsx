@@ -1,13 +1,13 @@
 const PORTFOLIO = [
   {
-  title: "PT Permata Kencana Raya",
-  type: "Freelance Project",
-  desc: "Pengembangan website company profile berdasarkan desain yang diberikan klien. Membangun komponen responsif dan berkolaborasi dengan tim desain & engineering untuk deployment.",
-  tags: ["React.js", "Chakra UI", "Company Profile", "Responsive"],
-  bgColor: "bg-sky-950",
-  borderColor: "border-sky-800",
-  badgeColor: "bg-sky-800 text-sky-200",
-  link: null,
+    title: "PT Permata Kencana Raya",
+    type: "Freelance Project",
+    desc: "Pengembangan website company profile berdasarkan desain yang diberikan klien. Membangun komponen responsif dan berkolaborasi dengan tim desain & engineering untuk deployment.",
+    tags: ["React.js", "Chakra UI", "Company Profile", "Responsive"],
+    bgColor: "bg-sky-950",
+    borderColor: "border-sky-800",
+    badgeColor: "bg-sky-800 text-sky-200",
+    link: null,
   },
   {
     title: "DestariaMC",
@@ -17,7 +17,9 @@ const PORTFOLIO = [
     bgColor: "bg-blue-950",
     borderColor: "border-blue-800",
     badgeColor: "bg-blue-800 text-blue-200",
-    link: null,
+    buttonColor: "bg-blue-600 hover:bg-blue-500",
+    buttontext: "Lihat Server",
+    link: "https://discord.gg/qcZ8HzGh6W",
   },
   {
     title: "GabutSMP",
@@ -26,17 +28,17 @@ const PORTFOLIO = [
     tags: ["Purpur", "Paper", "Plugin Management", "Dokumentasi"],
     bgColor: "bg-emerald-950",
     borderColor: "border-emerald-800",
-    badgeColor: "bg-emerald-800 text-emerald-200",
     link: null,
   },
   {
-    title: "Email Secure",
+    title: "Secure Mail",
     type: "Collaboration Project",
     desc: "Aplikasi demo pengamanan pesan email menggunakan enkripsi dan steganografi. Kolaborasi untuk tugas akhir, dengan Firebase sebagai backend.",
     tags: ["React.js", "Firebase", "Chakra UI", "Enkripsi"],
     bgColor: "bg-violet-950",
     borderColor: "border-violet-800",
     badgeColor: "bg-violet-800 text-violet-200",
+    buttonColor: "bg-violet-600 hover:bg-violet-500",
     link: "https://github.com/kokkio/tugas-akhir1",
   },
   {
@@ -47,6 +49,7 @@ const PORTFOLIO = [
     bgColor: "bg-orange-950",
     borderColor: "border-orange-800",
     badgeColor: "bg-orange-800 text-orange-200",
+    buttonColor: "bg-orange-600 hover:bg-orange-500",
     link: "https://github.com/aldigunawan-dev/jifoam",
   },
   {
@@ -108,9 +111,9 @@ export default function Portfolio() {
                   href={p.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-xs text-gray-400 hover:text-white border border-gray-700 hover:border-gray-500 px-3 py-2 rounded-lg transition-colors"
+                  className={`inline-flex items-center gap-2 text-xs text-white-400 hover:text-white border border-gray-700 hover:border-white-500 px-3 py-2 rounded-lg transition-colors ${p.buttonColor}`}
                 >
-                  GitHub →
+                  {p.buttontext || "GitHub"} →
                 </a>
               )}
             </div>
