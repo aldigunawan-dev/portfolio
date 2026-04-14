@@ -24,7 +24,7 @@ const PORTFOLIO = [
   {
     title: "GabutSMP",
     type: "Client Project",
-    desc: "Server Minecraft komersial berbasis Purpur/Paper fork. Termasuk dokumentasi lengkap: konfigurasi server, 19 datapack, 29 plugin, dan optimasi performa.",
+    desc: "Server Minecraft Private berbasis Purpur/Paper fork. Termasuk dokumentasi lengkap: konfigurasi server, 19 datapack, 29 plugin, dan optimasi performa.",
     tags: ["Purpur", "Paper", "Plugin Management", "Dokumentasi"],
     bgColor: "bg-emerald-950",
     borderColor: "border-emerald-800",
