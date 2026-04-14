@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 // Daftar menu — kalau mau tambah/kurangi menu, edit di sini saja
-const NAV_LINKS = ["Tentang", "Keahlian", "Layanan", "Portofolio", "Kontak"];
+const NAV_LINKS = [ "Keahlian", "Layanan", "Portofolio", "Kontak"];
 
 export default function Navbar() {
   // State untuk buka/tutup menu mobile (hamburger)
@@ -27,7 +27,7 @@ export default function Navbar() {
 
         {/* Logo / nama */}
         <span className="font-bold text-white text-lg">
-          Aldi<span className="text-blue-400">.</span>
+          Destaria<span className="text-blue-400">Dev</span>
         </span>
 
         {/* Menu desktop — hidden di mobile, flex di md ke atas */}

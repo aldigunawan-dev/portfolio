@@ -18,12 +18,11 @@ export default function App() {
       {/* Footer */}
       <footer className="border-t border-gray-800 py-8">
         <div className="max-w-5xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
-          <span className="font-bold text-white">
-            Aldi<span className="text-blue-400">.</span>
-          </span>
-          <p className="text-gray-600 text-sm">
-            © 2025 M. Aldi Gunawan. All rights reserved.
-          </p>
+          <div>
+            <p className="font-bold text-white text-lg">Destaria<span className="text-blue-400">Dev</span></p>
+            <p className="text-gray-600 text-xs mt-1">IT & Web Development</p>
+          </div>
+          <p className="text-gray-600 text-sm">© 2025 M. Aldi Gunawan. All rights reserved.</p>
         </div>
       </footer>
     </div>
