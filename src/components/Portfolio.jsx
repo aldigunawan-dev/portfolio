@@ -28,6 +28,7 @@ const PORTFOLIO = [
     tags: ["Purpur", "Paper", "Plugin Management", "Dokumentasi"],
     bgColor: "bg-emerald-950",
     borderColor: "border-emerald-800",
+    badgeColor: "bg-emerald-800 text-emerald-200",
     link: null,
   },
   {
